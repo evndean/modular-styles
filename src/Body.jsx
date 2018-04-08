@@ -1,6 +1,6 @@
 import React from 'react';
 
-const style = {
+const defaultStyle = {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
   gridTemplateRows: '404px 1fr',
@@ -31,8 +31,8 @@ const List = () => (
   </div>
 );
 
-export default () => (
-  <div style={style}>
+export default ({ style }) => (
+  <div style={{...style, ...defaultStyle}}>
     <Graph />
     <Graph />
     <Graph />

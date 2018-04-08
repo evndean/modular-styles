@@ -2,13 +2,12 @@ import React from 'react';
 
 const buttonColor = "#88909a";
 
-const sidebarStyle = {
+const defaultStyle = {
   backgroundColor: '#414042',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   boxShadow: '3px 0 4px 0 rgba(0, 0, 0, 0.24)',
-  zIndex: 5,
 };
 
 const Square = () => (
@@ -24,7 +23,7 @@ const Circle = ({ filled }) => (
 );
 
 export default ({ style }) => (
-  <div style={{...style, ...sidebarStyle}}>
+  <div style={{...style, ...defaultStyle}}>
     <Square />
     {Array(5).fill().map((t, i) => (
       <Circle key={i} />

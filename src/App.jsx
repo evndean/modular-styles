@@ -14,17 +14,31 @@ const style = {
   overflow: 'hidden',
 };
 
-const sidebarStyle = {
+const sidebarLayoutStyle = {
   gridRowStart: 1,
   gridRowEnd: 3,
   gridColumnStart: 1,
   gridColumnEnd: 2,
 };
 
+const headerLayoutStyle = {
+  gridRowStart: 1,
+  gridRowEnd: 2,
+  gridColumnStart: 2,
+  gridColumnEnd: 3,
+};
+
+const bodyLayoutStyle = {
+  gridRowStart: 2,
+  gridRowEnd: 3,
+  gridColumnStart: 2,
+  gridColumnEnd: 3,
+};
+
 export default () => (
   <div style={style}>
-    <SidebarNav style={sidebarStyle}/>
-    <HeaderNav />
-    <Body />
+    <Body style={bodyLayoutStyle}/>
+    <HeaderNav style={headerLayoutStyle}/>
+    <SidebarNav style={sidebarLayoutStyle}/>
   </div>
 );
