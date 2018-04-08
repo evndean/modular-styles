@@ -1,4 +1,5 @@
 import React from 'react';
+import List from './List';
 
 const defaultStyle = {
   display: 'grid',
@@ -21,17 +22,11 @@ const Graph = () => (
   </div>
 );
 
-const List = () => (
-  <div style={{ ...listLayoutStyle, backgroundColor: 'white', height: 600 }}>
-    LIST
-  </div>
-);
-
 export default ({ style }) => (
   <div style={{...style, ...defaultStyle}}>
     <Graph />
     <Graph />
     <Graph />
-    <List />
+    <List style={listLayoutStyle} />
   </div>
 );
