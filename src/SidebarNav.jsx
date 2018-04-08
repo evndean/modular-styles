@@ -23,7 +23,7 @@ const Circle = ({ filled }) => (
 );
 
 export default ({ style }) => (
-  <div style={{...style, ...defaultStyle}}>
+  <div style={{ ...defaultStyle, ...style }}>
     <Square />
     {Array(5).fill().map((t, i) => (
       <Circle key={i} />

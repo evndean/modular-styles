@@ -8,7 +8,7 @@ const defaultStyle = {
 };
 
 export default ({ style }) => (
-  <div style={{...style, ...defaultStyle}}>
+  <div style={{ ...defaultStyle, ...style }}>
     HEADER NAV
   </div>
 );
