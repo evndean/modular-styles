@@ -10,7 +10,8 @@ const style = {
   gridTemplateAreas: `
     'sidebar header'
     'sidebar body'
-    `,
+  `,
+  overflow: 'hidden',
 };
 
 const sidebarStyle = {

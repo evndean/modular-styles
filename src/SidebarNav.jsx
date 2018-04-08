@@ -7,6 +7,8 @@ const sidebarStyle = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  boxShadow: '3px 0 4px 0 rgba(0, 0, 0, 0.24)',
+  zIndex: 5,
 };
 
 const Square = () => (
