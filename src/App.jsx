@@ -7,10 +7,6 @@ const style = {
   display: 'grid',
   gridTemplateColumns: '80px auto',
   gridTemplateRows: '100px auto',
-  gridTemplateAreas: `
-    'sidebar header'
-    'sidebar body'
-  `,
   overflow: 'hidden',
 };
 

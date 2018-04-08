@@ -4,10 +4,6 @@ const defaultStyle = {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
   gridTemplateRows: '404px 1fr',
-  gridTemplateAreas: `
-    'graph graph graph'
-    'list list list'
-  `,
   gridGap: 30,
   backgroundColor: '#f0f3f4',
   color: '#88909a',
