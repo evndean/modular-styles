@@ -31,10 +31,12 @@ const bodyLayoutStyle = {
   gridColumnEnd: 3,
 };
 
-export default () => (
+const App = () => (
   <div style={style}>
     <Body style={bodyLayoutStyle}/>
     <HeaderNav style={headerLayoutStyle}/>
     <SidebarNav style={sidebarLayoutStyle}/>
   </div>
 );
+
+export default App;

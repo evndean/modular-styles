@@ -22,7 +22,7 @@ const Graph = () => (
   </div>
 );
 
-export default ({ style }) => (
+const Body = ({ style }) => (
   <div style={{ ...defaultStyle, ...style }}>
     <Graph />
     <Graph />
@@ -30,3 +30,5 @@ export default ({ style }) => (
     <List style={listLayoutStyle} />
   </div>
 );
+
+export default Body;

@@ -7,8 +7,10 @@ const defaultStyle = {
   boxShadow: '0 2px 4px 0 #c8ccd3',
 };
 
-export default ({ style }) => (
+const HeaderNav = ({ style }) => (
   <div style={{ ...defaultStyle, ...style }}>
     HEADER NAV
   </div>
 );
+
+export default HeaderNav;

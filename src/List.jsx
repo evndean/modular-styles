@@ -48,10 +48,12 @@ const ListItems = () => (
   </div>
 );
 
-export default ({ style }) => (
+const List = ({ style }) => (
   <div style={{ ...style }}>
     Active Content: 110 Items
     <button>ADD NEW</button>
     <ListItems />
   </div>
 );
+
+export default List;

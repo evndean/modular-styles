@@ -22,7 +22,7 @@ const Circle = ({ filled }) => (
   </svg>
 );
 
-export default ({ style }) => (
+const SidebarNav = ({ style }) => (
   <div style={{ ...defaultStyle, ...style }}>
     <Square />
     {Array(5).fill().map((t, i) => (
@@ -31,3 +31,5 @@ export default ({ style }) => (
     <Circle filled />
   </div>
 );
+
+export default SidebarNav;
